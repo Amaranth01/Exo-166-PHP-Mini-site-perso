@@ -9,7 +9,7 @@ error_reporting(E_ALL);
 
 // on inclue le fichier qui contient nos fonctions
 require __DIR__ . '/../lib/functions.php';
-
+require __DIR__ . '/../parts/header.php';
 // l'exemple avec le header, à vous de jouer pour le reste
 getPart('header');
 getContent();
