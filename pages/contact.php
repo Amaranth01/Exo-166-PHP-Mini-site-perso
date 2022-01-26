@@ -5,16 +5,16 @@
 <form action="../public/save.php" method="post">
     <div>
         <label for="id-username">Username</label>
-        <input type="text" name="username" id="id-username">
+        <input type="text" name="username" id="username" required>
     </div>
     <div>
         <label for="id-email">Votre email</label>
-        <input type="email" name="email" id="id-email">
+        <input type="email" name="email" id="email" required>
     </div>
 
     <div>
         <label for="id-message">Entrez votre message</label>
-        <textarea name="message" id="id-message" cols="30" rows="10"></textarea>
+        <textarea name="message" id="message" cols="15" rows="5" required></textarea>
     </div>
 
     <div>

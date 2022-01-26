@@ -31,15 +31,15 @@ function getUserData() {
     if (isset($_GET['page']) && $_GET['page'] == 'bio') {
         foreach ($obj as $item => $value) {
             if (is_array($value)){
-                echo "<p class='user'> $item </p>";
+                echo "<p class='experience'> $item </p>";
                 foreach ($value as $array) {
                     foreach ($array as $item2 => $value2) {
-                        echo "<p>$item2 </p>";
+                        echo "<p class='user'><span class='bold'>$item2 :</span> $value2 </p>";
                     }
                 }
             }
             else {
-                echo "<p>$item</p>";
+                echo "<p class='user'><span class='bold'>$item :</span> $value</p>";
             }
         }
     }

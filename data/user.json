@@ -1,19 +1,15 @@
 {
-    "name": "Doe",
-    "first_name": "Jane",
-    "occupation": "Web developer",
-    "experiences": [
+    "Nom": "Nectoux",
+    "Prénom": "Vanessa",
+    "Métier": "Développeur web",
+    "EXPERIENCES DIVERSES ": [
         {
-            "year": 2020,
-            "company": "Samll Startup"
+            "Année": 2022,
+            "Ecole": "Formation UpTo Fourmies"
         },
         {
-            "year": 2019,
-            "company": "World Corp"
-        },
-        {
-            "year": 2018,
-            "company": "Formation UpTo Fourmies"
+            "Année": 2019,
+            "Bénévolat": "Rédactrice pour un site de jeu vidéo"
         }
     ]
 }

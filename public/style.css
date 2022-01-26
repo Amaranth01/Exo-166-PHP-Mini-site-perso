@@ -44,3 +44,44 @@ section, form {
 section h1 {
 	margin: 8px;
 }
+
+#img {
+	width: 20rem;
+}
+
+.user {
+	margin-top: 1rem;
+}
+
+.bold {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.experience {
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: underline;
+	margin-top: 1rem;
+	font-size: 3rem;
+	color: red;
+}
+
+#username,  #email, #message {
+	margin-left: 5%;
+	padding: 1rem;
+}
+
+#username, #email {
+	padding: 0.2rem;
+	width: 28.5rem;
+}
+
+.first {
+	margin-top: 5rem;
+}
+
+#imageTwo {
+	margin-top: 5rem;
+	width: 40vw;
+}
