@@ -9,6 +9,5 @@
     <body>
         <header>
             <h1>Jane Doe</h1>
-            <?php getPart('menu');
-            ?>
+            <?php getPart('menu');?>
         </header>

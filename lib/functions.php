@@ -33,8 +33,8 @@ function getUserData() {
             if (is_array($value)){
                 echo "<p class='user'> $item </p>";
                 foreach ($value as $array) {
-                    foreach ($array as $subItem => $subValue) {
-                        echo "<p>$subItem </p>";
+                    foreach ($array as $item2 => $value2) {
+                        echo "<p>$item2 </p>";
                     }
                 }
             }

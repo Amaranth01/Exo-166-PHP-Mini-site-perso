@@ -1,4 +1,3 @@
-
 <nav
     <ul>
         <li><a href="../public/?page=bio">Bio</a></li>
