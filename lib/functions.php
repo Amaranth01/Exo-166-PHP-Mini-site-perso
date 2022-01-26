@@ -24,3 +24,20 @@ function getPart($name) {
 	include __DIR__ . '/../parts/'. $name . '.php';
 }
 
+function getUserData() {
+    $file = file_get_contents('../data/user.json')  ;
+    $obj = json_decode($file);
+    foreach ($obj as $item){
+        if(is_array($item)) {
+            foreach ($item as $item2) {
+                echo "<div class='style'></div>";
+                foreach ($item2 as $index3 => $item4) {
+                    echo "<p>".$item4."</p>";
+                }
+            }
+        }
+        else {
+            echo "<p class='user'>".$item."</p>";
+        }
+    }
+}
