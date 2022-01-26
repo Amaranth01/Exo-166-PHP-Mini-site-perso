@@ -27,17 +27,20 @@ function getPart($name) {
 function getUserData() {
     $file = file_get_contents('../data/user.json')  ;
     $obj = json_decode($file);
-    foreach ($obj as $item){
-        if(is_array($item)) {
-            foreach ($item as $item2) {
-                echo "<div class='style'></div>";
-                foreach ($item2 as $index3 => $item4) {
-                    echo "<p>".$item4."</p>";
+
+    if (isset($_GET['page']) && $_GET['page'] == 'bio') {
+        foreach ($obj as $item => $value) {
+            if (is_array($value)){
+                echo "<p class='user'> $item </p>";
+                foreach ($value as $array) {
+                    foreach ($array as $subItem => $subValue) {
+                        echo "<p>$subItem </p>";
+                    }
                 }
             }
-        }
-        else {
-            echo "<p class='user'>".$item."</p>";
+            else {
+                echo "<p>$item</p>";
+            }
         }
     }
 }
