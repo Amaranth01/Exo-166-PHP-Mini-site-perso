@@ -28,3 +28,12 @@ NB
 - Ne perdez pas trop de temps avec le CSS et le JS dans un premier temps
 - Faites un commit et un push à chacune de cez étapes (il devrait donc y avoir au moins 6 commits sur Github)
 - Respectez **scrupuleusement** les consignes, ça fait partie du boulot
+
+
+// NOTE PERSO
+
+Créé parge admin pour accès spécial. OK
+
+Gestion de fichier OK, formulaire de fichier OK... 
+
+Voir gestion des accès et MDP, pourquoi pas créé plusieurs accès admin ? Petit admin et grand admin ? 

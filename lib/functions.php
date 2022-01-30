@@ -39,7 +39,7 @@ function getUserData() {
                 }
             }
             else {
-                echo "<p class='user'><span class='bold'>$item :</span> $value</p>";
+                echo "<p class='user'> <span class='bold'>$item :</span> $value</p>";
             }
         }
     }
