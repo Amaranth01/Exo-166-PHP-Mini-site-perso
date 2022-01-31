@@ -21,16 +21,15 @@
     <form action="connexion.php" method="post">
         <div>
             <label for="username">Votre nom ou pseudo</label>
-            <input type="text" name="username" id="username" required>
+            <input type="text" name="username" class="username" required>
         </div>
 
         <div>
             <label for="password">Entrez votre mot de pass</label>
-            <input type="password" name="password" id="password" required>
+            <input type="password" name="password" class="password" required>
         </div>
 
         <div>
             <input type="submit" value="Envoyer" name="Envoyer" id="submit">
         </div>
     </form>
-

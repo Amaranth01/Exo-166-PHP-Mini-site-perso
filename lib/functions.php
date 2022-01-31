@@ -44,3 +44,8 @@ function getUserData() {
         }
     }
 }
+
+function getSecuredStringPostData(String $name): string {
+    $data = $_POST[$name] ?? '';
+    return strip_tags(trim($data));
+}
