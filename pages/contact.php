@@ -24,11 +24,13 @@
 
 <h2>Devenir admin</h2>
 
-<p>Devenir un administrateur entraine beaucoup de responsabilité. Afin que nous puissions avoir une preuve de votre existance,
-merci de nous envoyer la photo copie, ou une photo recto de votre pièce d'identité. </p>
+<p>Devenir un administrateur demande beaucoup de responsabilité. Afin que nous puissions avoir une preuve de votre existance,
+merci de nous envoyer la photo copie, ou une photo recto de votre pièce d'identité. Nous vous fournirons vos accès par mail.</p>
 
 <form action="/data/files.php" method="post" enctype="multipart/form-data">
 
     <label for="identity">Votre pièce jointe uniquement en JPG, JPEG ou PNG</label>
-    <input type="text" name="identity" id="identity" >
+    <input type="file" name="identity" id="identity" >
+
+    <input type="submit" value="Envoyer" name="Envoie">
 </form>

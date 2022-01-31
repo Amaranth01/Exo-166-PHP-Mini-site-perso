@@ -1,14 +1,14 @@
 <?php
 
-function getRandomName(String $finalName) : string {
-    $infos = pathinfo($finalName);
+function getRandomName(String $regularName) : string {
+    $infos = pathinfo($regularName);
     try {
-        $bytes = random_bytes(10);
+        $bytes = random_bytes(15);
     }
     catch (Exception $e) {
-        $bytes = openssl_random_pseudo_bytes(10);
+        $bytes = openssl_random_pseudo_bytes(15);
     }
-    return bin2hex($bytes) . '.' . $infos['extention'];
+    return bin2hex($bytes) . '.' . $infos['extension'];
 }
 
 if (isset($_FILES['identity']) && $_FILES['identity']['error'] === 0) {
@@ -18,12 +18,12 @@ if (isset($_FILES['identity']) && $_FILES['identity']['error'] === 0) {
         $maxSize = 1 * 1024 * 1024;
         if((int)$_FILES['identity']['size'] <= $maxSize) {
             $tmp_name = $_FILES['identity']['tmp_name'];
-            $name = getRandomName(['identity']['name']);
+            $name = getRandomName($_FILES['identity']['name']);
 
             if (!is_dir('uploads')) {
                 mkdir('uploads', '0755');
             }
-            move_uploaded_file($tmp_name, $name);
+            move_uploaded_file($tmp_name, 'uploads/' . $name);
         }
         else {
             echo "Le fichier est trop lourd";

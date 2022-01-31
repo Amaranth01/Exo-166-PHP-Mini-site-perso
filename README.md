@@ -1,7 +1,7 @@
 Mini-site prise en main
 ---
 
-Créez un mini site de 3 pages (accueil, bio, contact) avec une en-tête et un pied de page commun
+Créez un mini site de 3 pages (accueil, bio, contact) avec un en-tête et un pied de page commun
 Le contenu du site est libre, cependant il est conseillé de commencer à réfléchir à votre portfolio
 
 **Lisez toutes les instructions (deux fois s'il le faut) avant de commencer**
@@ -9,7 +9,7 @@ Le contenu du site est libre, cependant il est conseillé de commencer à réfl�
 Instructions détaillées
 ---
 
-1. **Forkez** ce *repo* puis **clônez le** sur votre macine
+1. **Forkez** ce *repo* puis **clonez le** sur votre machine
 2. Créez le contenu des pages `header.php`, `footer.php`, `menu.php` et `home.php`
 	- `header.php` doit lier le fichier `style.css` et inclure le fichier `menu.php` qui contient le menu du site
 	- `footer.php` doit lier le fichier `app.js`
@@ -19,7 +19,7 @@ Instructions détaillées
 6. affichez le dernier message dans la page `public/admin.php
 
 - Déployez l'appli sur votre serveur
-- Vous êtes libre de modifier toute la stucture si vous le souhaitez !
+- Vous êtes libre de modifier toute la structure si vous le souhaitez !
 
 NB
 --- 
@@ -28,12 +28,3 @@ NB
 - Ne perdez pas trop de temps avec le CSS et le JS dans un premier temps
 - Faites un commit et un push à chacune de cez étapes (il devrait donc y avoir au moins 6 commits sur Github)
 - Respectez **scrupuleusement** les consignes, ça fait partie du boulot
-
-
-// NOTE PERSO
-
-Créé parge admin pour accès spécial. OK
-
-Gestion de fichier OK, formulaire de fichier OK... 
-
-Voir gestion des accès et MDP, pourquoi pas créé plusieurs accès admin ? Petit admin et grand admin ? 
