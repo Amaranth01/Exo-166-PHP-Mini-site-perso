@@ -2,13 +2,13 @@
     <h1>Contact</h1>
 </section>
 
-<form action="../public/save.php" method="post">
+<form action="../pages/moderation.php" method="post">
     <div>
-        <label for="id-username">Username</label>
+        <label for="username">Username</label>
         <input type="text" name="username" id="username" required>
     </div>
     <div>
-        <label for="id-email">Votre email</label>
+        <label for="email">Votre email</label>
         <input type="email" name="email" id="email" required>
     </div>
 

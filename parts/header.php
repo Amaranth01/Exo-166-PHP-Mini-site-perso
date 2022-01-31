@@ -9,5 +9,5 @@
     <body>
         <header>
             <h1>Vanessa Nectoux</h1>
-            <?php getPart('menu');?>
+            <?php require __DIR__ . '/../parts/menu.php';?>
         </header>

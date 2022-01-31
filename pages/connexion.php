@@ -1,39 +1,36 @@
 <?php
-    session_start();
 
+    require __DIR__ . '/../parts/header.php';
     require __DIR__ . '/../data/credentials.php';
 
-    if(isset($_POST['submit'])) {
+    if (isset($_POST['Envoyer'])) {
         $username = $_POST['username'] ?? '';
         $passwd = $_POST['password'] ?? '';
-        if ($username === $login && $passwd === $passord) {
+
+        if ($username === $login && $password === $passwd) {
             $_SESSION['connected'] = true;
             $_SESSION['username'] = $username;
-            echo "Connexion validée";
-            header('Location: /admin.php');
-        }
-        else {
+            header('Location: /../pages/moderation.php');
+        } else {
             echo "Nom d'utilisateur ou mot de passe invalide";
         }
     }
 ?>
 
-<div id="content">
-
-    <form action="admin.php" method="post">
+<h2>Espace de connexion pour les administrateurs</h2>
+    <form action="connexion.php" method="post">
         <div>
             <label for="username">Votre nom ou pseudo</label>
             <input type="text" name="username" id="username" required>
         </div>
 
         <div>
-            <label for="password">Entrez votre message</label>
-            <input type="password" name="password" id="password">
+            <label for="password">Entrez votre mot de pass</label>
+            <input type="password" name="password" id="password" required>
         </div>
 
         <div>
-            <input type="submit" value="submit" name="submit">
+            <input type="submit" value="Envoyer" name="Envoyer" id="submit">
         </div>
     </form>
 
-</div>
