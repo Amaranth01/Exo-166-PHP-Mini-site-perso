@@ -13,18 +13,17 @@ if (isset($_POST['username']) && isset($_POST['email']) && isset($_POST['message
     if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         echo "Tout roule";
     }
-
-
 }
 else {
     echo "Ya une petite erreur";
 }
 
-$from = 'De : vanou01@gmail.com';
+$from = 'De: vanou01@gmail.com';
 $name = getSecuredStringPostData($_POST['username']);
-$mail = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+$mail = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
 $message = getSecuredStringPostData($_POST['message']);
 $message1 = $message;
+$sujet = "Salut !";
 
 $to = $mail;
 
@@ -34,7 +33,8 @@ $headers = array(
 );
 
 if (isset($_POST["email"], $_POST["message"])){
-    mail($to, $message1, (string)$headers, "-f ".$from);
+    mail($to, $message1, $sujet, $headers, "-f ".$from);
+    echo "OK";
 }
 
-header('Location: /index.php');
+//header('Location: /index.php');
