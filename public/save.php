@@ -28,13 +28,13 @@ $sujet = "Salut !";
 $to = $mail;
 
 $headers = array(
-    "Reply-To" => $from,
+    "From" => "vanou01@gmail.com'",
     "X-Mailer" => "PHP/".phpversion()
 );
 
 if (isset($_POST["email"], $_POST["message"])){
-    mail($to, $message1, $sujet, $headers, "-f ".$from);
+    mail($to, $message1, $sujet, $headers);
     echo "OK";
 }
 
-//header('Location: /index.php');
+header('Location: /index.php');
